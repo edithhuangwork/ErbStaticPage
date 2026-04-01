@@ -1,22 +1,31 @@
+
+            <a href="./index.html"></a>
+            <div class="mian-menu hidden md:flex items-center gap-8"></div>
+        </div>
+    </nav>
+</body>
+</html>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/4.1.13/lib.min.js" integrity="sha512-LBqpfYKfymp3VEoHOQharES5j6UyXzUP0Td5jk5j1Ekm9tsbAoGUi5VaGA+0gdAlqKvAUb+7iFBe6qQQ7Jwk0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./assets/favicon.ico" type="image/x-icon">
-    <title>Tour</title>
+    <title>Tour(Tailwind version)</title>
 </head>
 <body>
 <!-- navbar fixed the spacing between items -->
-    <nav class="navbar">
-        <div class="container navbar-flex">
+    <nav class="bg-white shadow-md">
+        <div class="container px-4 py-3 flex items-center justify-between">
             <a href="./index.html" class="logo">
-                <img src="./assets/logo.png" alt="" class="logo" /></a>
-            <div class="main-menu">
-                <ul class="main-menu-list">
-                    <li><a href="#home">Home</a></li>
+                <img src="./assets/logo.png" alt="" class="h-10 w-auto" /></a>
+            <div class="mian-menu hidden md:flex items-center gap-8">
+                <ul class="main-menu-list flex gap-6">
+                    <li><a href="#home" class="text-grey-800">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#tours">Tours</a></li>
@@ -40,14 +49,14 @@
                 <div class="mobile-menu-toggle">
                     <i class="fa-solid fa-bars"></i>
                 </div>
-                <div class="mobile-menu-items">
-                    <ul class="mobile-menu-list">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#tours">Tours</a></li>
+            <div class="mobile-menu-items">
+                <ul class="mobile-menu-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#tours">Tours</a></li>
                     </ul>
-                </div>
+            </div>
             </div>
         </div>
     </nav>
